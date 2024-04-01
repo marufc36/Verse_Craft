@@ -44,6 +44,15 @@
         input[type="text"]:focus::placeholder {
             opacity: 0; /* Hide placeholder when input is focused */
         }
+        .examples {
+            margin-top: 20px;
+        }
+        .examples a {
+            margin-right: 10px;
+            cursor: pointer;
+            text-decoration: underline;
+            color: blue;
+        }
     </style>
 </head>
 <body>
@@ -52,5 +61,11 @@
         <input type="text" id="user_input" name="user_input" placeholder="Enter text">
         <input type="submit" value="Verse Craft">
     </form>
+    <div class="examples">
+        Examples:
+        <a onclick="document.getElementById('user_input').value = 'All horizons packed with cloud cover';">Example 1</a>
+        <a onclick="document.getElementById('user_input').value = 'I\'ve said goodbye to the twentieth century';">Example 2</a>
+        <!-- Add more clickable examples as needed -->
+    </div>
 </body>
 </html>
